@@ -14,3 +14,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# ignore other unneeded files per tutorial:
+# why '.idea' or '.project'?
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
