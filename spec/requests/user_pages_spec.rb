@@ -31,6 +31,7 @@ describe "User pages" do
       end
     end
 
+		# should really verify that all bits of the signin got in, currently  have a problem with email's not being updated
     describe "with valid information" do
       before do
         fill_in "Name",         with: "Example User"
