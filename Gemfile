@@ -40,9 +40,9 @@ group :test do
   # gem 'rb-notifu', '0.0.4'
   # gem 'win32console', '1.3.2'
 
+	# factory_girl is a replacement for "fixtures"
 	gem 'factory_girl_rails', '4.2.1'
 end
-
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '4.0.0.rc1'

@@ -33,6 +33,9 @@ describe "User pages" do
 
 		# should really verify that all bits of the signin got in, currently  have a problem with email's not being updated
     describe "with valid information" do
+
+			# should use FactoryGirl to create the test user
+
       before do
         fill_in "Name",         with: "Example User"
         fill_in "Email",        with: "user@example.com"
@@ -43,6 +46,9 @@ describe "User pages" do
       it "should create a user" do
         expect { click_button submit }.to change(User, :count).by(1)
       end
+
+			# should verify that the email & so logged to the database are correct
+
     end
   end
 
