@@ -12,6 +12,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 		# flash[:log] = "email: " + @user.email
     if @user.save
+			# sign_in defined in sessions_helpers.rb
+			sign_in @user
 			flash[:success] = "Welcome to the Sample App!"
 			redirect_to @user
     else
