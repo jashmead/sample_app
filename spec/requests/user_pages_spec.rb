@@ -34,7 +34,7 @@ describe "User pages" do
 		# should really verify that all bits of the signin got in, currently  have a problem with email's not being updated
     describe "with valid information" do
 
-			# should use FactoryGirl to create the test user
+			# should use FactoryGirl to create the test user, once we understand how to use that
 
       before do
         fill_in "Name",         with: "Example User"
