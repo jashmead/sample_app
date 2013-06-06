@@ -8,9 +8,9 @@ namespace :db do
                  password_confirmation: "foobar", 
 									admin: true)
     99.times do |n|
-      name  = Faker::Name.name	# why needed?
+      name  = Faker::Name.name	# why needed?  produces really nice names!
       email = "example-#{n+1}@railstutorial.org"
-      password  = "password"
+      password  = "password"			# guess we are bored by the usual foobar!
       User.create!(name: name,
                    email: email,
                    password: password,
