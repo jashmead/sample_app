@@ -61,7 +61,6 @@ describe "Authentication" do
         end
 
         describe "after signing in" do
-
           it "should render the desired protected page" do
             expect(page).to have_title('Edit user')
           end
@@ -80,15 +79,15 @@ describe "Authentication" do
           specify { expect(response).to redirect_to(signin_path) }
         end
 
-          describe "visiting the user index" do
-            before { visit users_path }
-            it { should have_title('Sign in') }
-          end
+				describe "visiting the user index" do
+					before { visit users_path }
+					it { should have_title('Sign in') }
+				end
 
       end
 
         # how is it that 'post' & 'delete' are actually working?, perhaps there is just little to do?
-      describe "in the Microposts controller" do
+			describe "in the Microposts controller" do
 
         describe "submitting to the create action" do
           before { post microposts_path }
