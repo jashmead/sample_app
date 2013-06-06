@@ -116,7 +116,7 @@ describe "Authentication" do
         before { patch user_path(wrong_user) }
         specify { expect(response).to redirect_to(root_path) }
       end
-    end	# end wrong user
+    end
 
     describe "as non-admin user" do
       let(:user) { FactoryGirl.create(:user) }
